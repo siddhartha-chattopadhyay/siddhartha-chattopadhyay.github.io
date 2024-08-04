@@ -88,7 +88,7 @@
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <h2>Siddhartha Chattopadhyay</h2>
-        <p>I'm <span class="typed" data-typed-items="theoretical AMO physicist"></span>
+        <p>I'm <span class="typed" data-typed-items="theoretical AMO physicist working as a Postdoc at University of Central Florida"></span>
         <span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
         <br><br> 
         <br><br> 
@@ -117,8 +117,8 @@
         <h2>About</h2>
         <p>Hi there! I am Siddhartha, a postdoc researcher at the Department of Physics, University of Central Florida. 
            I am a theoretical AMO physicist specializing in ab-initio modeling of atomic and molecular structures and 
-           collision processes. My current research explores time-resolved attosecond electron dynamics following double 
-           ionization in atoms and molecules.</p>
+           collision processes. My current research explores time-resolved attosecond electron dynamics following single 
+           and double ionization in atoms and molecules.</p>
            <br/><br/> 
         <p>The advent of attosecond pulses has revolutionized the study of electronic motion in real-time, giving rise 
            to the field of attosecond science in the early 2000s. This transformative field was honored with the 2023 
@@ -128,8 +128,8 @@
            <br/><br/> 
         <p>Despite these technological advancements, theoretical approaches have yet to fully catch up. My goal is to 
            develop methods based on a fully ab-initio description with finite pulses to simulate observables in an 
-           attosecond pump-probe spectroscopy. Specifically, I aim to use XUV/X-ray pulses in multi-photon single and 
-           double ionization to elucidate the formation of double-hole states and their interactions with the environment.</p>
+           attosecond pump-probe spectroscopic experiments. Specifically, I aim to use XUV/X-ray pulses in multi-photon ionization 
+           to elucidate the formation of multiple hole states and their interactions with the environment.</p>
            <br/><br/> 
         <p>To address these challenges, I combine close-coupling-based ab-initio structure methods 
            (e.g., multi-configuration Hartree-Fock, multi-configuration Dirac-Hartree-Fock) with scattering theory approaches. 
@@ -262,14 +262,18 @@
           <div class="service-item d-flex" data-aos="fade-up" data-aos-delay="100">
             <div class="icon flex-shrink-0"><i class="fas fa-atom"></i></div>
             <div>
-              <h4 class="title"><a href="#" class="stretched-link">Time-resolved multiphoton double ionization</a></h4>
+              <h4 class="title"><a href="#" class="stretched-link">Time-resolved studies of  multiphoton double ionization</a></h4>
               <p class="description">X-ray Free-Electron Lasers have revolutionized the time-resolved study of multiple vacancies in poly-electronic 
               atoms and molecules, yet theoretical advancements have lagged. To address this, we developed the finite-pulse virtual-sequential model 
               (FPVSM), which simulates two-photon double-ionization processes in poly-electronic systems using ab initio single-ionization amplitudes 
               for the initial and intermediate states. Implemented for poly-electronic atoms, FPVSM has shown remarkable agreement with experimental 
-              results for atomic neon. Currently, we are integrating FPVSM into ASTRA, a molecular ionization program from Dr. Argenti's group at UCF. 
+              results for atomic neon. For the first time, we demonstrated that in the TPDI process of atomic neon, spatially separated entangled 
+              electrons cause two-particle interference in the joint photoelectron distribution, a nonlocal phenomenon first proposed by Anton 
+              Zeilinger (Nobel Prize in Physics 2022) and collaborators. Currently, we are integrating FPVSM into <code>ASTRA</code>, a molecular 
+              ionization program from  Dr. Luca Argenti's group at UCF. 
               This will enable the study of double-hole state formation and two-center two-particle interference, crucial for coherent control of 
               molecular states and understanding the interaction of extreme light with matter.
+              </p>
             </div>
           </div>
           <!-- End Service Item -->
@@ -284,9 +288,11 @@
                and XUV sources, studying spin-orbit effects in attosecond dynamics is on the horizon, requiring consideration of relaxation, dynamical 
                electron correlation, and relativistic effects, especially for heavy atoms. This necessitates a unified treatment of bound states and 
                continuum dynamics in a relativistic framework, beyond current truncated perturbative approaches. Our goal is to develop a multi-reference 
-               Dirac-Hartree-Fock treatment with close-coupling formalism. We plan to interface the general relativistic atomic structure package (GRASP2018) 
-               with a close-coupling formalism based on the NEWSTOCK suite of codes, surpassing current methods where relativistic terms in many-body 
-               attosecond processes are only treated as truncated perturbative expansions.
+               Dirac-Hartree-Fock treatment with close-coupling formalism. We plan to interface the general relativistic atomic structure package, 
+               <code>GRASP2018</code> with a close-coupling formalism based on the <code>NewStock</code> suite of codes, surpassing current methods where 
+               relativistic terms in many-body 
+               attosecond processes are only treated as truncated perturbative expansions. This will open the avenues for studying spectral phases and the
+               quantum beating observed in attosecond transient absorption spectroscopy of heavy atoms, where spin-orbit dynamics plays a crucial role.
               </p>
 
             </div>
@@ -295,16 +301,17 @@
           <div class="service-item d-flex" data-aos="fade-up" data-aos-delay="300">
             <div class="icon flex-shrink-0"><i class="fas fa-atom"></i></div>
             <div>
-              <h4 class="title"><a href="#" class="stretched-link">Dual Kinetic Balance Set based approach for 
-              relativistic atomic many-body calculations</a></h4>
-               <p class="description">Theoretical attosecond physics has traditionally focused on simple two-electron systems like He and H<sub>2</sub> in 
-               its full dimensionality or used single- or two-active electron approximations for poly-electronic systems. With advances in intense X-FELs 
-               and XUV sources, studying spin-orbit effects in attosecond dynamics is on the horizon, requiring consideration of relaxation, dynamical 
-               electron correlation, and relativistic effects, especially for heavy atoms. This necessitates a unified treatment of bound states and 
-               continuum dynamics in a relativistic framework, beyond current truncated perturbative approaches. Our goal is to develop a multi-reference 
-               Dirac-Hartree-Fock treatment with close-coupling formalism. We plan to interface the general relativistic atomic structure package (GRASP2018) 
-               with a close-coupling formalism based on the NEWSTOCK suite of codes, surpassing current methods where relativistic terms in many-body 
-               attosecond processes are only treated as truncated perturbative expansions.
+              <h4 class="title"><a href="#" class="stretched-link">B-spline based basis set approach for 
+              ultrastrong laser-matter interactions </a></h4>
+               <p class="description">The Schwinger effect, predicted by Julian Schwinger in 1951, is a quantum phenomenon where a strong electric field 
+               can spontaneously create particle pairs, like electron-positron pairs. Creating such ultra-strong fields in extreme light facilities will 
+               soon enable investigations into relativistic and vacuum polarization effects in the time domain. This requires an ab-initio relativistic 
+               treatment beyond the no-pair approximation. Solving the Dirac-Coulomb problem with finite difference basis faces issues due to spurious 
+               eigenstates and non-singular two-point boundary conditions. B-spline based algorithms can elegantly address 
+               the single-center Dirac equation. My goal is to develop a B-spline based basis set approach to solve the 
+               Dirac-Coulomb problem with lowest order QED effects to understand the time-resolved dynamics of pair-creation which would provide unprecedented 
+               insights into non-perturbative QED processes and the behavior of vacuum under extreme conditions. While the technical challenges are significant, 
+               the rapid advancements in both high-intensity laser technology and attosecond pulse generation make this a promising area of research. 
               </p>
 
             </div>
@@ -323,6 +330,7 @@
       <div class="container section-title" data-aos="fade-up">
         <h2>My Publications</h2>
         <ul>
+          <li> 
           You can find my research articles on my <a href="https://scholar.google.com/citations?user=fryd9NsAAAAJ&hl=en">Google Scholar</a></li>
          </ul>
       </div><!-- End Section Title -->
